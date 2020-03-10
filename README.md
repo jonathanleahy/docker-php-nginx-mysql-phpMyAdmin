@@ -1,6 +1,10 @@
 ## Running
 
-See README.md for details of the challenge.
+See coding-test.md for details of the challenge.
+
+## Abstract
+
+Create a micro-service in PHP without using a predefined framework such as Laravel, Symfony, etc. to list entries from an SQL database table.
 
 ## Running
 
