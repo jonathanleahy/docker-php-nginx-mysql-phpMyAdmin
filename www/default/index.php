@@ -1,6 +1,5 @@
 <?php
 
-use App\Vegetables;
 use MiladRahimi\PhpRouter\Exceptions\RouteNotFoundException;
 use MiladRahimi\PhpRouter\Router;
 use Zend\Diactoros\Response\HtmlResponse;
@@ -21,8 +20,11 @@ if (!$listveg) {
     $router = new Router();
 
     $router->get('/vegetables', function () {
-        $a = new Vegetables();
-        return (JSON_encode($a->populate()));
+        $veg = new Vegetables();
+        $results = $veg->populate();
+
+        header('Content-type: application/json');
+        return (JSON_encode($results));
     });
 
     try {
@@ -36,6 +38,6 @@ if (!$listveg) {
 } else {
 
     $a = new Vegetables();
-    echo (JSON_encode($a->populate()));
+    echo  (JSON_encode($a->populate()));
 
 }

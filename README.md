@@ -20,6 +20,10 @@ cd default
 php index.php
 ```
 
+Tests,
+```
+from /php7-dockerized/www/default$, run 'phpunit' 
+```
 
 ## Issues
 

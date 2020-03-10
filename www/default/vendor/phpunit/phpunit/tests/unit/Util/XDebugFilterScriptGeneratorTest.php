@@ -38,8 +38,8 @@ if (!\\function_exists('xdebug_set_filter')) {
         '$expectedDirectory',
         '$expectedDirectory',
         '$expectedDirectory',
-        'src/foo.php',
-        'src/bar.php'
+        'app/foo.php',
+        'app/bar.php'
     ]
 );
 
@@ -79,8 +79,8 @@ EOF;
             ),
             FilterFileCollection::fromArray(
                 [
-                    new FilterFile('src/foo.php'),
-                    new FilterFile('src/bar.php'),
+                    new FilterFile('app/foo.php'),
+                    new FilterFile('app/bar.php'),
                 ]
             ),
             FilterDirectoryCollection::fromArray([]),

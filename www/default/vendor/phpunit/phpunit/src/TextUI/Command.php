@@ -406,7 +406,7 @@ class Command
                     print 'Tests directory (relative to path shown above; default: tests): ';
                     $testsDirectory = \trim(\fgets(\STDIN));
 
-                    print 'Source directory (relative to path shown above; default: src): ';
+                    print 'Source directory (relative to path shown above; default: app): ';
                     $src = \trim(\fgets(\STDIN));
 
                     if ($bootstrapScript === '') {
@@ -418,7 +418,7 @@ class Command
                     }
 
                     if ($src === '') {
-                        $src = 'src';
+                        $src = 'app';
                     }
 
                     $generator = new Generator;

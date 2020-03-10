@@ -28,7 +28,7 @@ use SebastianBergmann\CodeCoverage\CodeCoverage;
 
 $coverage = new CodeCoverage;
 
-$coverage->filter()->addDirectoryToWhitelist('/path/to/src');
+$coverage->filter()->addDirectoryToWhitelist('/path/to/app');
 
 $coverage->start('<name of test>');
 

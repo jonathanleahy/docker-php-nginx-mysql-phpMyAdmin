@@ -41,7 +41,7 @@ final class ConfigurationGeneratorTest extends TestCase
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">src</directory>
+            <directory suffix=".php">app</directory>
         </whitelist>
     </filter>
 </phpunit>
@@ -50,7 +50,7 @@ final class ConfigurationGeneratorTest extends TestCase
                 'X.Y.Z',
                 'vendor/autoload.php',
                 'tests',
-                'src'
+                'app'
             )
         );
     }

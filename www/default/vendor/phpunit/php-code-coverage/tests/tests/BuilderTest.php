@@ -152,7 +152,7 @@ class BuilderTest extends TestCase
 
         $this->assertEquals(
             [
-                'src' => [
+                'app' => [
                     'Money.php/f'    => [],
                     'MoneyBag.php/f' => [],
                     'Foo'            => [
@@ -167,9 +167,9 @@ class BuilderTest extends TestCase
             $method->invoke(
                 $this->factory,
                 [
-                    "src{$s}Money.php"                    => [],
-                    "src{$s}MoneyBag.php"                 => [],
-                    "src{$s}Foo{$s}Bar{$s}Baz{$s}Foo.php" => [],
+                    "app{$s}Money.php"                    => [],
+                    "app{$s}MoneyBag.php"                 => [],
+                    "app{$s}Foo{$s}Bar{$s}Baz{$s}Foo.php" => [],
                 ]
             )
         );
