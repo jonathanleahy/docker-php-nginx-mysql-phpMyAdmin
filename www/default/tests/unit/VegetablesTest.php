@@ -10,11 +10,4 @@ class VegetablesTest extends TestCase
         $this->assertEquals(0, $vegetables->getCount());
     }
 
-    public function testVegetablesNotEmpty()
-    {
-        $vegetables = new Vegetables();
-        $results = $vegetables->populate();
-        $this->assertEquals(0, $results->getCount());
-    }
-
 }

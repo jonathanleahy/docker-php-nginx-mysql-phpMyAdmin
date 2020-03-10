@@ -20,9 +20,14 @@ cd default
 php index.php
 ```
 
-Tests,
+Tests, Initially, 
+Within /php7-dockerized/www/default$
 ```
-from /php7-dockerized/www/default$, run 'phpunit' 
+alias phpunit="./vendor/phpunit/phpunit/phpunit"
+```
+
+```
+phpunit
 ```
 
 ## Issues
