@@ -1,4 +1,4 @@
-# Censornet PHP coding test
+# PHP coding test
 ## Abstract
 Create a micro-service in PHP without using a predefined framework such as Laravel,
 Symfony, etc. to list entries from an SQL database table.
