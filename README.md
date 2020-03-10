@@ -1,5 +1,9 @@
 ## Running
 
+See README.md for details of the challenge.
+
+## Running
+
 Clone the repository.
 Change directory into the cloned project.
 Run the following command.
