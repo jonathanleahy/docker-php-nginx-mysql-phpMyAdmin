@@ -9,12 +9,7 @@ $router = new Router();
 
 $router->get('/vegetables', function () {
     $a = new Vegetables();
-    return ( $a->show() );
-    return '<p>This is homepag1e</p>';
-});
-
-$router->get('/t', function () {
-    return '<p>This is /t route</p>';
+    return (JSON_encode($a->populate()));
 });
 
 $router->dispatch();
