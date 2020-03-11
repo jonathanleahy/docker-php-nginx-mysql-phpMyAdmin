@@ -29,14 +29,14 @@ php index.php
 ```
 
 Tests, Initially, 
-Within /php7-dockerized/www/default$
 ```
 alias phpunit="./vendor/phpunit/phpunit/phpunit"
 ```
 
 ```
+cd php7-dockerized/www/default/
 phpunit
-```
+````
 
 ## Issues
 
